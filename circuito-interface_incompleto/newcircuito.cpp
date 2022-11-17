@@ -33,6 +33,6 @@ void NewCircuito::on_NewCircuito_accepted()
   int numOutputs(ui->spinNumOut->value());
   int numPortas(ui->spinNumPortas->value());
 
-  // Sinaliza a necessidade de redimensionamento do circuito
+  // Sinaliza a necessidade de redimensionamento do circuito.
   emit signNewCircuito(numInputs,numOutputs,numPortas);
 }

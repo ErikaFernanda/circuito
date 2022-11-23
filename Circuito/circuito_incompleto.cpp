@@ -1,6 +1,15 @@
 #include <fstream>
 #include <utility> // para std::swap
 #include "circuito.h"
+#include "port.h"
+
+Port_NOT NT;
+// Port_AND AN;
+// Port_NAND NA;
+// Port_OR OR;
+// Port_NOR NO;
+// Port_XOR XO;
+// Port_NXOR NX;
 
 ///
 /// As strings que definem os tipos de porta
@@ -28,13 +37,13 @@ ptr_Port allocPort(std::string& Tipo)
 {
   if (!validType(Tipo)) return nullptr;
 
-  if (Tipo=="NT") return new Port_NOT;
-  if (Tipo=="AN") return new Port_AND;
-  if (Tipo=="NA") return new Port_NAND;
-  if (Tipo=="OR") return new Port_OR;
-  if (Tipo=="NO") return new Port_NOR;
-  if (Tipo=="XO") return new Port_XOR;
-  if (Tipo=="NX") return new Port_NXOR;
+  if (Tipo=="NT") return new Port_NOT();
+  // if (Tipo=="AN") return new Port_AND;
+  // if (Tipo=="NA") return new Port_NAND;
+  // if (Tipo=="OR") return new Port_OR;
+  // if (Tipo=="NO") return new Port_NOR;
+  // if (Tipo=="XO") return new Port_XOR;
+  // if (Tipo=="NX") return new Port_NXOR;
 
   // Nunca deve chegar aqui...
   return nullptr;
@@ -49,6 +58,19 @@ ptr_Port allocPort(std::string& Tipo)
 /// ***********************
 
 // falta_fazer();
+Circuito::Circuito() : Nin(0), Nout(0), Nports(0) {}
+
+void Circuito::clear()
+{
+  Nin = 0;
+  Nout = 0;
+  Nports = 0;
+  id_out.clear();
+  out_circ.clear();
+  ports.clear();
+}
+
+Circuito::~Circuito() { clear(); }
 
 /// ***********************
 /// Funcoes de testagem
@@ -126,6 +148,33 @@ bool Circuito::valid() const
 /// Funcoes de consulta
 /// ***********************
 
+
+int Circuito::getId_inPort(int IdPort, int I) const
+{
+  return 0;
+}
+int Circuito::getNumPorts() const
+{
+  return Nin;
+}
+int Circuito::getNumInputsPort( int port) const
+{
+  return 0;
+}
+
+int Circuito::getNumInputs() const
+{
+  return Nin;
+}
+
+int Circuito::getNumOutputs() const
+{
+  return id_out.size();
+}
+int Circuito::getIdOutput(int id_output) const
+{
+  return 0;
+}
 // falta_fazer();
 
 /// ***********************
@@ -137,6 +186,14 @@ bool Circuito::valid() const
 /// ***********************
 /// E/S de dados
 /// ***********************
+void Circuito::digitar()
+{}
+bool Circuito::ler(const std::string &arq)
+{return true;}
+
+bool Circuito::salvar(const std::string &arq) const
+{return true;}
+
 
 // falta_fazer();
 

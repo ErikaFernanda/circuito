@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1669234240 source:c:\projetos\circuito\circuito\bool3s.cpp
+	<iostream>
+	"bool3S.h"
+
+1669234240 c:\projetos\circuito\circuito\bool3s.h
+	<iostream>
+
+1669236367 source:c:\projetos\circuito\circuito\circuito-main.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1669235475 c:\projetos\circuito\circuito\circuito.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+	"port.h"
+
+1669234240 c:\projetos\circuito\circuito\port.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+
+1669234622 source:c:\projetos\circuito\circuito\port_incompleto.cpp
+	<fstream>
+	"port.h"
+

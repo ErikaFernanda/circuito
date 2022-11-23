@@ -19,16 +19,12 @@ Port::Port(int NI):id_in(NI,0),out_port(bool3S::UNDEF)
   // polimorfismo nesse momento.
   // Entao seria chamada a versao base de validNumInputs, que testaria se
   // estah entre 2 e 4 e geraria erro ao criar portas NOT
-  /*
-  if (!validNumInputs(NI))
-  {
-    id_in.clear();
-  }
-  */
 }
 
 // Destrutor (nao faz nada)
 Port::~Port() {}
+
+Port_NOT::Port_NOT(){}
 
 /// ***********************
 /// Funcoes de testagem

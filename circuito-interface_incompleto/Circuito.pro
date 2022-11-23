@@ -28,13 +28,18 @@ SOURCES += main.cpp\
     maincircuito.cpp \
     modificarporta.cpp \
     newcircuito.cpp \
-    modificarsaida.cpp
+    modificarsaida.cpp \
+    circuito_incompleto.cpp \
+    port_incompleto.cpp \
+    circuito-main.cpp
 
 HEADERS  += maincircuito.h \
     bool3S.h \
     modificarporta.h \
     newcircuito.h \
-    modificarsaida.h
+    modificarsaida.h \
+    circuito.h \
+    port.h
 
 FORMS    += maincircuito.ui \
     modificarporta.ui \

@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="../bool3S.cpp" />
+		<Unit filename="../bool3S.h" />
+		<Unit filename="../circuito-main.cpp" />
+		<Unit filename="../circuito.h" />
+		<Unit filename="../circuito_incompleto.cpp" />
+		<Unit filename="../port.h" />
+		<Unit filename="../port_incompleto.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

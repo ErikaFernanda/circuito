@@ -20,15 +20,17 @@ Port_NOT NT;
 
 // Funcao auxiliar que testa se uma string com nome de porta eh valida
 // Caso necessario, converte os caracteres da string para maiusculas
-bool validType(std::string& Tipo)
+bool validType(std::string &Tipo)
 {
-  if (Tipo.size()!=2) return false;
+  if (Tipo.size() != 2)
+    return false;
   Tipo.at(0) = toupper(Tipo.at(0));
   Tipo.at(1) = toupper(Tipo.at(1));
-  if (Tipo=="NT" ||
-      Tipo=="AN" || Tipo=="NA" ||
-      Tipo=="OR" || Tipo=="NO" ||
-      Tipo=="XO" || Tipo=="NX") return true;
+  if (Tipo == "NT" ||
+      Tipo == "AN" || Tipo == "NA" ||
+      Tipo == "OR" || Tipo == "NO" ||
+      Tipo == "XO" || Tipo == "NX")
+    return true;
   return false;
 }
 
@@ -36,11 +38,13 @@ bool validType(std::string& Tipo)
 // O tipo da porta alocada depende do parametro string de entrada (AN, OR, etc.)
 // Caso o tipo nao seja nenhum dos validos, retorna nullptr
 // Pode ser utilizada nas funcoes: Circuito::setPort, Circuito::digitar e Circuito::ler
-ptr_Port allocPort(std::string& Tipo)
+ptr_Port allocPort(std::string &Tipo)
 {
-  if (!validType(Tipo)) return nullptr;
+  if (!validType(Tipo))
+    return nullptr;
 
-  if (Tipo=="NT") return new Port_NOT();
+  if (Tipo == "NT")
+    return new Port_NOT();
   // if (Tipo=="AN") return new Port_AND;
   // if (Tipo=="NA") return new Port_NAND;
   // if (Tipo=="OR") return new Port_OR;
@@ -82,19 +86,19 @@ Circuito::~Circuito() { clear(); }
 // Retorna true se IdInput eh uma id de entrada do circuito valida (entre -1 e -NInput)
 bool Circuito::validIdInput(int IdInput) const
 {
-  return (IdInput<=-1 && IdInput>=-getNumInputs());
+  return (IdInput <= -1 && IdInput >= -getNumInputs());
 }
 
 // Retorna true se IdOutput eh uma id de saida do circuito valida (entre 1 e NOutput)
 bool Circuito::validIdOutput(int IdOutput) const
 {
-  return (IdOutput>=1 && IdOutput<=getNumOutputs());
+  return (IdOutput >= 1 && IdOutput <= getNumOutputs());
 }
 
 // Retorna true se IdPort eh uma id de porta do circuito valida (entre 1 e NPort)
 bool Circuito::validIdPort(int IdPort) const
 {
-  return (IdPort>=1 && IdPort<=getNumPorts());
+  return (IdPort >= 1 && IdPort <= getNumPorts());
 }
 
 // Retorna true se IdOrig eh uma id valida para a origem do sinal de uma entrada de porta ou
@@ -109,8 +113,10 @@ bool Circuito::validIdOrig(int IdOrig) const
 // a porta estah definida (estah alocada, ou seja, != nullptr)
 bool Circuito::definedPort(int IdPort) const
 {
-  if (!validIdPort(IdPort)) return false;
-  if (ports.at(IdPort-1)==nullptr) return false;
+  if (!validIdPort(IdPort))
+    return false;
+  if (ports.at(IdPort - 1) == nullptr)
+    return false;
   return true;
 }
 
@@ -118,10 +124,12 @@ bool Circuito::definedPort(int IdPort) const
 // todas as entradas da porta com Id de origem valida (usa getId_inPort e validIdOrig)
 bool Circuito::validPort(int IdPort) const
 {
-  if (!definedPort(IdPort)) return false;
-  for (int j=0; j<getNumInputsPort(IdPort); j++)
+  if (!definedPort(IdPort))
+    return false;
+  for (int j = 0; j < getNumInputsPort(IdPort); j++)
   {
-    if (!validIdOrig(getId_inPort(IdPort,j))) return false;
+    if (!validIdOrig(getId_inPort(IdPort, j)))
+      return false;
   }
   return true;
 }
@@ -133,16 +141,21 @@ bool Circuito::validPort(int IdPort) const
 // Essa funcao deve ser usada antes de salvar ou simular um circuito
 bool Circuito::valid() const
 {
-  if (getNumInputs()<=0) return false;
-  if (getNumOutputs()<=0) return false;
-  if (getNumPorts()<=0) return false;
-  for (int i=0; i<getNumPorts(); i++)
+  if (getNumInputs() <= 0)
+    return false;
+  if (getNumOutputs() <= 0)
+    return false;
+  if (getNumPorts() <= 0)
+    return false;
+  for (int i = 0; i < getNumPorts(); i++)
   {
-    if (!validPort(i+1)) return false;
+    if (!validPort(i + 1))
+      return false;
   }
-  for (int i=0; i<getNumOutputs(); i++)
+  for (int i = 0; i < getNumOutputs(); i++)
   {
-    if (!validIdOrig(getIdOutput(i+1))) return false;
+    if (!validIdOrig(getIdOutput(i + 1)))
+      return false;
   }
   return true;
 }
@@ -151,17 +164,24 @@ bool Circuito::valid() const
 /// Funcoes de consulta
 /// ***********************
 
-
 int Circuito::getId_inPort(int IdPort, int I) const
 {
+  if (definedPort(IdPort))
+  {
+    return ports[IdPort - 1]->getId_in(I);
+  }
   return 0;
 }
 int Circuito::getNumPorts() const
 {
-  return Nin;
+  return ports.size();
 }
-int Circuito::getNumInputsPort( int port) const
+int Circuito::getNumInputsPort(int IdPort) const
 {
+  if (definedPort(IdPort))
+  {
+    return ports[IdPort - 1]->getNumInputs();
+  }
   return 0;
 }
 
@@ -174,8 +194,12 @@ int Circuito::getNumOutputs() const
 {
   return id_out.size();
 }
-int Circuito::getIdOutput(int id_output) const
+int Circuito::getIdOutput(int IdOutput) const
 {
+  if (validIdOutput(IdOutput))
+  {
+    return id_out[IdOutput - 1];
+  }
   return 0;
 }
 // falta_fazer();
@@ -190,22 +214,64 @@ int Circuito::getIdOutput(int id_output) const
 /// E/S de dados
 /// ***********************
 void Circuito::digitar()
-{}
-bool Circuito::ler(const std::string &arq)
-{return true;}
-
-bool Circuito::salvar(const std::string &arq) const
-{return true;}
-
-ostream& Circuito::imprimir(ostream &O) const
 {
-    return O;
 }
-bool Circuito::simular(const std::vector<bool3S>& in_circ){
+bool Circuito::ler(const std::string &arq)
+{
   return true;
 }
-bool3S Circuito::getOutput(int IdOutput) const{
-  return bool3S::TRUE;
+
+bool Circuito::salvar(const std::string &arq) const
+{
+  return true;
+}
+
+ostream &Circuito::imprimir(ostream &O) const
+{
+  return O;
+}
+bool Circuito::simular(const std::vector<bool3S> &in_circ)
+{
+  bool tudo_def, alguma_def;
+  int id;
+  std::vector<bool3S> in_port;
+  for (int i = 0; i < getNumPorts(); i++)
+  {
+    ports[i]->setOutput(bool3S::UNDEF);
+  }
+
+  while (!tudo_def && alguma_def)
+  {
+    tudo_def = true;
+    alguma_def = false;
+    for (int i = 0; i < getNumPorts() - 1; i++)
+    {
+      if (ports[i]->getOutput() == bool3S::UNDEF)
+      {
+        for (int j = 0; j < ports[i]->getNumInputs() - 1; j++)
+        {
+          id = ports[i]->getId_in(j);
+          if (id > 0)
+            in_port[j] = ports[id - 1]->getOutput();
+          else
+            in_port[j] = in_circ[-id - 1];
+        }
+        ports[i]->simular(in_port);
+        if (ports[i]->getOutput() == bool3S::UNDEF)
+          tudo_def = false;
+        else
+          alguma_def = true;
+      }
+    }
+  }
+}
+bool3S Circuito::getOutput(int IdOutput) const
+{
+  if (validIdOutput(IdOutput))
+  {
+    return out_circ[IdOutput - 1];
+  }
+  return bool3S::UNDEF;
 }
 
 // falta_fazer();

@@ -2,6 +2,9 @@
 #include <utility> // para std::swap
 #include "circuito.h"
 #include "port.h"
+#include <iostream>
+
+using namespace std;
 
 Port_NOT NT;
 // Port_AND AN;
@@ -194,6 +197,16 @@ bool Circuito::ler(const std::string &arq)
 bool Circuito::salvar(const std::string &arq) const
 {return true;}
 
+ostream& Circuito::imprimir(ostream &O) const
+{
+    return O;
+}
+bool Circuito::simular(const std::vector<bool3S>& in_circ){
+  return true;
+}
+bool3S Circuito::getOutput(int IdOutput) const{
+  return bool3S::TRUE;
+}
 
 // falta_fazer();
 

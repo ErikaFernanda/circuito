@@ -1,6 +1,8 @@
 #include <fstream>
 #include "port.h"
 
+using namespace std;
+
 //
 // CLASSE PORT
 //
@@ -26,7 +28,8 @@ Port::Port(int NI):id_in(NI,0),out_port(bool3S::UNDEF)
   }
   */
 }
-
+// Construtor por copia
+Port::Port(const Port &P) : id_in(P.id_in), out_port(P.out_port){}
 // Destrutor (nao faz nada)
 Port::~Port() {}
 
@@ -231,3 +234,39 @@ std::ostream& operator<<(std::ostream& O, const Port& X)
 
 // falta_fazer();
 
+/// ==================== PORT NOT ======================
+Port_NOT::Port_NOT() : Port(1){};
+
+ptr_Port Port_NOT::clone() const { return new Port_NOT(); };
+
+string Port_NOT::getName() const
+{
+  return "NT";
+}
+
+bool Port_NOT::validNumInputs(int NI) const
+{
+  return NI == 1;
+}
+
+void Port_NOT::digitar()
+{
+  id_in.resize(1);
+  // cout << "ID entrada: \n";
+  // cin >> id_in[0];
+  while (!validIndex(id_in[0]))
+  {
+    // cout << "ID invalido. Por favor, digite outro id: \n";
+    // cin >> id_in[0];
+  }
+}
+
+void Port_NOT::simular(const std::vector<bool3S> &in_port)
+{
+  if (in_port.size() != getNumInputs())
+  {
+    out_port = bool3S::UNDEF;
+    return;
+  }
+  out_port = ~in_port.at(0); // ou ~in_port[0];
+}

@@ -44,6 +44,8 @@ public:
   // Testa o parametro (validNumInputs), dimensiona e inicializa os elementos
   // do array id_in com valor invalido (0), inicializa out_port com UNDEF
   Port(int NI=2);
+  Port(const Port &);
+
   // Destrutor virtual
   virtual ~Port();
 
@@ -70,7 +72,7 @@ public:
   // - Todas as id de entrada da porta sao diferentes de zero.
   bool valid() const;
 
-  // Testa se a dimensao do vetor eh igual ao numero de entradas da porta; se não
+  // Testa se a dimensao do vetor eh igual ao numero de entradas da porta; se nï¿½o
   // for, faz out_port <- UNDEF e retorna false; caso seja, retorna true.
   // Deve ser utilizada antes de simular uma porta
   bool testValidSizeInputs(const std::vector<bool3S>& in_port);
@@ -99,7 +101,7 @@ public:
 
   // Fixa o numero de entradas da porta
   // Depois de testar o parametro (validNumInputs), se o novo numero de entradas for igual ao
-  // anterior não faz nada; caso seja diferente, redimensiona e inicializa os elementos do
+  // anterior nï¿½o faz nada; caso seja diferente, redimensiona e inicializa os elementos do
   // array id_in com valor invalido (0)
   void setNumInputs(int NI);
 
@@ -210,7 +212,7 @@ public:
   std::string getName() const;
 
   // Testa se a dimensao do vetor in_port eh igual ao numero de entradas da porta;
-  // se não for, faz out_port <- UNDEF e retorna.
+  // se nï¿½o for, faz out_port <- UNDEF e retorna.
   // Armazena o valor bool3S com o resultado da simulacao (saida da porta)
   // no dado "out_port" da porta
   void simular(const std::vector<bool3S>& in_port);

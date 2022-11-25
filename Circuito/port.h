@@ -16,7 +16,7 @@
 //
 
 class Port;
-typedef Port* ptr_Port;
+typedef Port *ptr_Port;
 
 class Port {
 protected:
@@ -41,9 +41,10 @@ public:
   /// ***********************
 
   // Construtor (recebe como parametro o numero de entradas da porta)
-  // Dimensiona e inicializa os elementos do array id_in com valor invalido (0),
-  // inicializa out_port com UNDEF
+  // Testa o parametro (validNumInputs), dimensiona e inicializa os elementos
+  // do array id_in com valor invalido (0), inicializa out_port com UNDEF
   Port(int NI=2);
+
   // Destrutor virtual
   virtual ~Port();
 
@@ -180,7 +181,6 @@ std::ostream& operator<<(std::ostream& O, const Port& X);
 
 class Port_NOT: public Port {
 public:
-  // Fixa o numero de entradas da porta como sendo 1
   Port_NOT();
   // Retorna new Port_NOT(*this)
   ptr_Port clone() const;
@@ -206,7 +206,6 @@ class Port_AND: public Port {
 public:
   // Construtor (recebe como parametro o numero de entradas da porta)
   // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-
   Port_AND(int NI=2);
   // Retorna new Port_AND(*this)
   ptr_Port clone() const;
@@ -222,9 +221,7 @@ public:
 
 class Port_NAND: public Port {
 public:
-  // Construtor (recebe como parametro o numero de entradas da porta)
-  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_NAND(int NI=2);
+  Port_NAND();
   // Retorna new Port_NAND(*this)
   ptr_Port clone() const;
   // Retorna "NA"
@@ -239,9 +236,7 @@ public:
 
 class Port_OR: public Port {
 public:
-  // Construtor (recebe como parametro o numero de entradas da porta)
-  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_OR(int NI=2);
+  Port_OR();
   // Retorna new Port_OR(*this)
   ptr_Port clone() const;
   // Retorna "OR"
@@ -256,9 +251,7 @@ public:
 
 class Port_NOR: public Port {
 public:
-  // Construtor (recebe como parametro o numero de entradas da porta)
-  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_NOR(int NI=2);
+  Port_NOR();
   // Retorna new Port_NOR(*this)
   ptr_Port clone() const;
   // Retorna "NO"
@@ -273,9 +266,7 @@ public:
 
 class Port_XOR: public Port {
 public:
-  // Construtor (recebe como parametro o numero de entradas da porta)
-  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_XOR(int NI=2);
+  Port_XOR();
   // Retorna new Port_XOR(*this)
   ptr_Port clone() const;
   // Retorna "XO"
@@ -290,9 +281,7 @@ public:
 
 class Port_NXOR: public Port {
 public:
-  // Construtor (recebe como parametro o numero de entradas da porta)
-  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_NXOR(int NI=2);
+  Port_NXOR();
   // Retorna new Port_NXOR(*this)
   ptr_Port clone() const;
   // Retorna "NX"

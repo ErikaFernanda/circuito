@@ -244,11 +244,11 @@ bool Port_NOT::validNumInputs(int NI) const
 void Port_NOT::digitar()
 {
   id_in.resize(1);
-  cout << "ID entrada: \n";
+  cout << "ID de entrada: \n";
   cin >> id_in[0];
   while (!validIndex(id_in[0]))
   {
-    cout << "ID invalido. Por favor, digite outro id: \n";
+    cout << "ID inválido. Digite outro ID: \n";
     cin >> id_in[0];
   }
 }

@@ -305,3 +305,87 @@ void Port_NAND::simular(const std::vector<bool3S> &in_port){
     }
     out_port = ~out_port;
 }
+/// ==================== PORT OR ======================
+Port_OR::Port_OR() : Port(2){};
+
+ptr_Port Port_OR::clone() const { return new Port_OR(); };
+
+std::string Port_OR::getName() const
+{
+  return "OR";
+}
+
+void Port_OR::simular(const std::vector<bool3S> &in_port){//???????
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = |in_port[0];//???????
+}
+/// ==================== PORT NOR ======================
+Port_NOR::Port_NOR() : Port(2){};
+
+ptr_Port Port_NOR::clone() const { return new Port_NOR(); };
+
+std::string Port_NOR::getName() const
+{
+  return "NO";
+}
+
+void Port_NOR::simular(const std::vector<bool3S> &in_port){
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = in_port[0];
+    for(int i=1;i<getNumInputs();i++){
+        out_port |= in_port[i];
+    }
+    out_port = ~out_port;
+}
+/// ==================== PORT XOR ======================
+Port_XOR::Port_XOR() : Port(2){};
+
+ptr_Port Port_XOR::clone() const { return new Port_XOR(); };
+
+std::string Port_XOR::getName() const
+{
+  return "XO";
+}
+
+void Port_XOR::simular(const std::vector<bool3S> &in_port){
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = in_port[0];
+    for(int i=1;i<getNumInputs();i++){
+        out_port ^= in_port[i];
+    }
+    out_port = ~out_port;
+}
+/// ==================== PORT NXOR ======================
+Port_NXOR::Port_NXOR() : Port(2){};
+
+ptr_Port Port_NXOR::clone() const { return new Port_NXOR(); };
+
+std::string Port_NXOR::getName() const
+{
+  return "NX";
+}
+
+void Port_NXOR::simular(const std::vector<bool3S> &in_port){//?????????
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = in_port[0];
+    for(int i=1;i<getNumInputs();i++){
+        out_port ^= in_port[i];
+    }
+    out_port = ~out_port;
+}

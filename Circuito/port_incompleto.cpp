@@ -263,7 +263,7 @@ void Port_NOT::simular(const std::vector<bool3S> &in_port)
 }
 
 /// ==================== PORT AND ======================
-Port_AND::Port_AND() : Port(2){};//?????????
+Port_AND::Port_AND() : Port(2){};
 
 ptr_Port Port_AND::clone() const { return new Port_AND(); };
 
@@ -284,7 +284,7 @@ void Port_AND::simular(const std::vector<bool3S> &in_port){
     }
 }
 /// ==================== PORT NAND ======================
-Port_NAND::Port_NAND() : Port(2){};//????????
+Port_NAND::Port_NAND() : Port(2){};
 
 ptr_Port Port_NAND::clone() const { return new Port_NAND(); };
 

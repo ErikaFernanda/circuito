@@ -7,8 +7,8 @@
 using namespace std;
 
 Port_NOT NT;
-// Port_AND AN;
-// Port_NAND NA;
+Port_AND AN;
+Port_NAND NA;
 // Port_OR OR;
 // Port_NOR NO;
 // Port_XOR XO;

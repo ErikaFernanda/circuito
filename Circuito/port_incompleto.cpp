@@ -321,7 +321,10 @@ void Port_OR::simular(const std::vector<bool3S> &in_port){//???????
         out_port = bool3S::UNDEF;
         return;
     }
-    out_port = |in_port[0];//???????
+    out_port = in_port[0];
+    for(int i=1;i<getNumInputs();i++){
+        out_port |= in_port[i];
+    }
 }
 /// ==================== PORT NOR ======================
 Port_NOR::Port_NOR() : Port(2){};
@@ -365,7 +368,6 @@ void Port_XOR::simular(const std::vector<bool3S> &in_port){
     for(int i=1;i<getNumInputs();i++){
         out_port ^= in_port[i];
     }
-    out_port = ~out_port;
 }
 /// ==================== PORT NXOR ======================
 Port_NXOR::Port_NXOR() : Port(2){};

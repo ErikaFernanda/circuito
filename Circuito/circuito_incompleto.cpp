@@ -9,10 +9,10 @@ using namespace std;
 Port_NOT NT;
 Port_AND AN;
 Port_NAND NA;
-// Port_OR OR;
-// Port_NOR NO;
-// Port_XOR XO;
-// Port_NXOR NX;
+Port_OR OR;
+Port_NOR NO;
+Port_XOR XO;
+Port_NXOR NX;
 
 ///
 /// As strings que definem os tipos de porta
@@ -45,12 +45,12 @@ ptr_Port allocPort(std::string &Tipo)
 
   if (Tipo == "NT")
     return new Port_NOT();
-  // if (Tipo=="AN") return new Port_AND;
-  // if (Tipo=="NA") return new Port_NAND;
-  // if (Tipo=="OR") return new Port_OR;
-  // if (Tipo=="NO") return new Port_NOR;
-  // if (Tipo=="XO") return new Port_XOR;
-  // if (Tipo=="NX") return new Port_NXOR;
+  if (Tipo=="AN") return new Port_AND;
+  if (Tipo=="NA") return new Port_NAND;
+  if (Tipo=="OR") return new Port_OR;
+  if (Tipo=="NO") return new Port_NOR;
+  if (Tipo=="XO") return new Port_XOR;
+  if (Tipo=="NX") return new Port_NXOR;
 
   // Nunca deve chegar aqui...
   return nullptr;
@@ -262,17 +262,17 @@ cout << "SP2: "<< sigla_porta <<endl;
       ports.push_back((&NT)->clone());
     }
     else if (sigla_porta == "AN")
-      ports.push_back((&AN)->clone());
+        ports.push_back((&AN)->clone());
     else if (sigla_porta == "NA")
-      ports.push_back((&NA)->clone());
-    // else if (sigla_porta == "OR")
-    //   ports.push_back((&OR)->clone());
-    // else if (sigla_porta == "NO")
-    //   ports.push_back((&NOR)->clone());
-    // else if (sigla_porta == "XO")
-    //   ports.push_back((&XO)->clone());
-    // else if (sigla_porta == "NX")
-    //   ports.push_back((&NX)->clone());
+        ports.push_back((&NA)->clone());
+    else if (sigla_porta == "OR")
+        ports.push_back((&OR)->clone());
+    else if (sigla_porta == "NO")
+        ports.push_back((&NO)->clone());
+    else if (sigla_porta == "XO")
+        ports.push_back((&XO)->clone());
+    else if (sigla_porta == "NX")
+        ports.push_back((&NX)->clone());
     else
     {
       cout << "Erro: Essa porta não existe. ";
@@ -349,14 +349,14 @@ bool Circuito::ler(const std::string &arq)
         ports[i] = (&AN)->clone();
       else if (tipo == "NA")
         ports[i] = (&NA)->clone();
-      // else if (tipo == "OR")
-      //   ports[i] = (&OR)->clone();
-      // else if (tipo == "NO")
-      //   ports[i] = (&NOR)->clone();
-      // else if (tipo == "XO")
-      //   ports[i] = (&XO)->clone();
-      // else if (tipo == "NX")
-      //   ports[i] = (&NX)->clone();
+      else if (tipo == "OR")
+        ports[i] = (&OR)->clone();
+      else if (tipo == "NO")
+        ports[i] = (&NO)->clone();
+      else if (tipo == "XO")
+        ports[i] = (&XO)->clone();
+      else if (tipo == "NX")
+        ports[i] = (&NX)->clone();
       else
         cout << "Tipo de porta inexistente";
 

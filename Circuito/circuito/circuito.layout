@@ -2,39 +2,39 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="..\circuito.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\port.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10002" topLine="21" />
-		</Cursor>
-	</File>
-	<File name="..\circuito_incompleto.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4510" topLine="120" />
+			<Cursor1 position="9827" topLine="12" />
 		</Cursor>
 	</File>
 	<File name="..\bool3S.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="638" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="..\port_incompleto.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10668" topLine="331" />
+			<Cursor1 position="485" topLine="27" />
 		</Cursor>
 	</File>
 	<File name="..\bool3S.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1469" topLine="30" />
-		</Cursor>
-	</File>
-	<File name="..\port.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10224" topLine="255" />
+			<Cursor1 position="3242" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="..\circuito-main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2158" topLine="12" />
+			<Cursor1 position="740" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="..\circuito.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2273" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="..\port_incompleto.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9350" topLine="328" />
+		</Cursor>
+	</File>
+	<File name="..\circuito_incompleto.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9148" topLine="363" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -4,6 +4,8 @@ debug/maincircuito.o
 debug/modificarporta.o
 debug/newcircuito.o
 debug/modificarsaida.o
+debug/circuito_incompleto.o
+debug/port_incompleto.o
 debug/moc_maincircuito.o
 debug/moc_modificarporta.o
 debug/moc_newcircuito.o

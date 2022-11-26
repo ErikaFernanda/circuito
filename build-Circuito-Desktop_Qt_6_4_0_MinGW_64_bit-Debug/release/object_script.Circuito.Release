@@ -4,6 +4,8 @@ release/maincircuito.o
 release/modificarporta.o
 release/newcircuito.o
 release/modificarsaida.o
+release/circuito_incompleto.o
+release/port_incompleto.o
 release/moc_maincircuito.o
 release/moc_modificarporta.o
 release/moc_newcircuito.o

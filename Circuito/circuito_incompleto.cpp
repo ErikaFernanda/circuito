@@ -484,10 +484,3 @@ bool3S Circuito::getOutput(int IdOutput) const
   return bool3S::UNDEF;
 }
 
-// falta_fazer();
-
-/// ***********************
-/// SIMULACAO (funcao principal do circuito)
-/// ***********************
-
-// falta_fazer();

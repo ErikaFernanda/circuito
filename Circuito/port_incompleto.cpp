@@ -247,7 +247,7 @@ void Port_NOT::digitar()
   std::cin >> id_in[0];
   while (!validIndex(id_in[0]))
   {
-    std::cout << "ID inválido. Digite outro ID: \n";
+    std::cout << "ID invalido. Digite outro ID: \n";
     std::cin >> id_in[0];
   }
 }

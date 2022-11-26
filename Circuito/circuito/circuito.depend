@@ -53,14 +53,14 @@
 	<vector>
 	"bool3S.h"
 
-1669482658 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\circuito_incompleto.cpp
+1669505786 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\circuito_incompleto.cpp
 	<fstream>
 	<utility>
 	"circuito.h"
 	"port.h"
 	<iostream>
 
-1669483411 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\port_incompleto.cpp
+1669501528 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\port_incompleto.cpp
 	<fstream>
 	"port.h"
 

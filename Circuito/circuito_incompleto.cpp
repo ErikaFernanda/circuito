@@ -215,14 +215,216 @@ int Circuito::getIdOutput(int IdOutput) const
 /// ***********************
 void Circuito::digitar()
 {
+  int Nentradas;
+  int Nsaidas;
+  int Nport;
+  string sigla_porta;
+  bool porta_valida;
+  
+  cout << "Informe o numero de entradas (Nin): \n";
+  cin >> Nentradas;
+  while(Nentradas == 0){
+    cout << "\n Numero de entradas invalido. Por favor, informe outro\n";
+    cin >> Nentradas;
+  }
+  
+  cout << "Informe o numero de saídas (Nout): \n";
+  cin >> Nsaidas;
+  while (Nsaidas == 0){
+    cout << "\n Numero de saidas invalido. Por favor, informe outro\n";
+    cin >> Nsaidas;
+  }
+  
+  cout << "Informe o numero de portas (Nport): \n";
+  cin >> Nport;
+  while(Nport == 0){
+    cout << "\n Numero de portas invalido. Por favor, informe outro\n";
+    cin >> Nport;
+  }
+
+  for (unsigned i = 0; i < Nport; i++)
+  {
+    cin.ignore(256,'\n');
+    cout << "Portas disponiveis: (NT,AN,NA,OR,NO,XO,NX) \n";
+    cout << "Informe a porta que deseja criar: ";
+    getline(cin,sigla_porta);
+    
+cout << "SP2: "<< sigla_porta <<endl;
+    while (!validType(sigla_porta))
+    {
+      cin.ignore(256,'\n');
+      cout << "\nA porta digitada eh invalida. Por favor, digite outra porta: \n";
+      cout << "Portas disponiveis: (NT,AN,NA,OR,NO,XO,NX): ";
+      getline(cin,sigla_porta);
+    }
+
+    if (sigla_porta == "NT"){
+      ports.push_back((&NT)->clone());
+    }
+    else if (sigla_porta == "AN")
+      ports.push_back((&AN)->clone());
+    else if (sigla_porta == "NA")
+      ports.push_back((&NA)->clone());
+    // else if (sigla_porta == "OR")
+    //   ports.push_back((&OR)->clone());
+    // else if (sigla_porta == "NO")
+    //   ports.push_back((&NOR)->clone());
+    // else if (sigla_porta == "XO")
+    //   ports.push_back((&XO)->clone());
+    // else if (sigla_porta == "NX")
+    //   ports.push_back((&NX)->clone());
+    else
+    {
+      cout << "Erro: Essa porta não existe. ";
+      clear();
+      return;
+    }
+    ports[i]->digitar();
+
+    int ID;
+    for (unsigned i = 0; i < Nout; i++)
+    {
+      cout << "ID do sinal que vai para a saida " << i + 1 << endl;
+      cin >> ID;
+      if (validIdOrig(ID))
+      {
+        id_out[i] = ID;
+      }
+      else
+      {
+        do
+        {
+          cout << "ID invalido. Por favor, digite outro ID do sinal. \n";
+          cin >> ID;
+        } while (!validIdOrig(ID));
+        id_out[i] = ID; // Se chegou aqui, eh, pq o ID ja estah validado
+      }
+    }
+  }
 }
 bool Circuito::ler(const std::string &arq)
 {
+  cout << arq;
+  ifstream arquivo(arq);
+  string prov, tipo;
+  int NI, NO, NP, Nin;
+  if (arquivo.is_open())
+  {
+    arquivo >> prov >> NI >> NO >> NP;
+  
+    if (prov != "CIRCUITO" || NI <= 0 || NO <= 0 || NP <= 0)
+    {
+      cout << "Erro: Arquivo fora do modelo desejado.\n";
+      return false;
+    }
+    arquivo.ignore(255, '\n');
+    arquivo >> prov;
+    if (prov != "PORTAS")
+    {
+      cout << "Erro: Palavra chave 'PORTAS'";
+      return false;
+    }
+    arquivo.ignore(255, '\n');
+
+    int i = 0, int_prov;
+    do
+    {
+      arquivo >> int_prov;
+      if (int_prov != i + 1)
+      {
+        cout << "Portas faltando ou nao estao ordenadas\n";
+        return false;
+      }
+      arquivo.ignore(255, ' ');
+      arquivo >> tipo;
+
+      if (!validType(tipo))
+      {
+        cout << "Tipo de porta invalido. Por favor, verifique o arquivo e tente novamente. \n";
+      }
+
+      if (tipo == "NT")
+        ports[i] = (&NT)->clone();
+      else if (tipo == "AN")
+        ports[i] = (&AN)->clone();
+      else if (tipo == "NA")
+        ports[i] = (&NA)->clone();
+      // else if (tipo == "OR")
+      //   ports[i] = (&OR)->clone();
+      // else if (tipo == "NO")
+      //   ports[i] = (&NOR)->clone();
+      // else if (tipo == "XO")
+      //   ports[i] = (&XO)->clone();
+      // else if (tipo == "NX")
+      //   ports[i] = (&NX)->clone();
+      else
+        cout << "Tipo de porta inexistente";
+
+      if (!ports[i]->ler(arquivo))
+      {
+        cout << "Erro: Não foi possivel ler o arquivo para a porta i = " << i + 1 << endl;
+        return false;
+      }
+      i++;
+    } while (i < NP);
+
+    arquivo >> prov;
+    if (prov != "SAIDAS:")
+    {
+      cout << "Erro: Palavra chave 'SAIDAS:'";
+      return false;
+    }
+    arquivo.ignore(255, '\n');
+
+    i = 0;
+    for (unsigned i = 0; i < NO; i++)
+    {
+      arquivo >> int_prov;
+      if (int_prov != i + 1)
+      {
+        cout << "Saidas fora de ordem, ou fantando\n";
+        return false;
+      }
+      arquivo.ignore(255, ' ');
+
+      arquivo >> int_prov; // Não sei se deve ser lido de novo
+      if (!validIdPort(NP))
+      {
+        cout << "Erro: Id out > Nportas";
+        return false;
+      }
+
+      id_out[i] = int_prov;
+    }
+  }
+  
   return true;
+
 }
 
 bool Circuito::salvar(const std::string &arq) const
 {
+
+// CIRCUITO 2 2 5
+// PORTAS
+// 1) NA 2: -1 -2
+// 2) OR 2: 1 4
+// 3) AN 2: -1 3
+// 4) NT 1: -2
+// 5) NT 1: 3
+// SAIDAS
+// 1) 2
+// 2) 5
+  ofstream O(arq.c_str());
+  if (!O.is_open())
+    return false;
+
+  O << "CIRCUITO " << endl;
+  O << "PORTAS " << endl;
+  O << "SAIDAS " << endl;
+
+
+  O.close();
   return true;
 }
 

@@ -262,3 +262,47 @@ void Port_NOT::simular(const std::vector<bool3S> &in_port)
   }
   out_port = ~in_port[0];
 }
+
+/// ==================== PORT AND ======================
+Port_AND::Port_AND(int NI=2) : Port(1){};//?????????
+
+ptr_Port Port_AND::clone() const { return new Port_AND(); };
+
+string Port_AND::getName() const
+{
+  return "AN";
+}
+
+void Port_AND::simular(const std::vector<bool3S> &in_port){
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = in_port[0];
+    for(int i=1;i<Num_input_port;i++){
+        out_port &= in_port[i];
+    }
+}
+/// ==================== PORT NAND ======================
+Port_NAND::Port_NAND() : Port(1){};//????????
+
+ptr_Port Port_NAND::clone() const { return new Port_NAND(); };
+
+string Port_AND::getName() const
+{
+  return "NA";
+}
+
+void Port_NAND::simular(const std::vector<bool3S> &in_port){
+    if (in_port.size() != getNumInputs())
+    {
+        out_port = bool3S::UNDEF;
+        return;
+    }
+    out_port = in_port[0];
+    for(int i=1;i<Num_input_port;i++){
+        out_port &= in_port[i];
+    }
+    out_port = ~out_port;
+}

@@ -28,3 +28,39 @@
 	<fstream>
 	"port.h"
 
+1669413733 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\bool3s.cpp
+	<iostream>
+	"bool3S.h"
+
+1669413733 c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\bool3s.h
+	<iostream>
+
+1669413733 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\circuito-main.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1669413733 c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\circuito.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+	"port.h"
+
+1669413733 c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\port.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+
+1669413733 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\circuito_incompleto.cpp
+	<fstream>
+	<utility>
+	"circuito.h"
+	"port.h"
+	<iostream>
+
+1669413733 source:c:\users\lip-g\documents\ufrn\semestre 6\programa플o av\projeto4\pasta master\circuito\circuito\port_incompleto.cpp
+	<fstream>
+	"port.h"
+

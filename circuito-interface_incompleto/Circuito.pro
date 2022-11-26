@@ -30,8 +30,7 @@ SOURCES += main.cpp\
     newcircuito.cpp \
     modificarsaida.cpp \
     circuito_incompleto.cpp \
-    port_incompleto.cpp \
-    circuito-main.cpp
+    port_incompleto.cpp
 
 HEADERS  += maincircuito.h \
     bool3S.h \

@@ -31,6 +31,8 @@ private:
 
   // Numero de entradas do circuito
   int Nin;
+  int Nout;
+  int Nports;
 
   // Nao precisa manter variaveis para guardar o numero de saidas e ports.
   // Essas informacoes estao armazenadas nos tamanhos (size) dos vetores correspondentes:

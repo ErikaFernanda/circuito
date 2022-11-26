@@ -44,7 +44,6 @@ public:
   // Testa o parametro (validNumInputs), dimensiona e inicializa os elementos
   // do array id_in com valor invalido (0), inicializa out_port com UNDEF
   Port(int NI=2);
-  Port(const Port &);
 
   // Destrutor virtual
   virtual ~Port();
@@ -205,6 +204,8 @@ public:
 
 class Port_AND: public Port {
 public:
+  // Construtor (recebe como parametro o numero de entradas da porta)
+  // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
   Port_AND();
   // Retorna new Port_AND(*this)
   ptr_Port clone() const;

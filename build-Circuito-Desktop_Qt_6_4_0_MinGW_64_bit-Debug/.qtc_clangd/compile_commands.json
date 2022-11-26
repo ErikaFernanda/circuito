@@ -31,7 +31,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -56,10 +56,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\main.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\main.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/main.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/main.cpp"
 },
 {
     "arguments": [
@@ -93,7 +93,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -118,10 +118,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\bool3S.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\bool3S.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/bool3S.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/bool3S.cpp"
 },
 {
     "arguments": [
@@ -155,7 +155,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -180,10 +180,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\maincircuito.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\maincircuito.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/maincircuito.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/maincircuito.cpp"
 },
 {
     "arguments": [
@@ -217,7 +217,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -242,10 +242,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\modificarporta.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\modificarporta.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/modificarporta.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/modificarporta.cpp"
 },
 {
     "arguments": [
@@ -279,7 +279,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -304,10 +304,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\newcircuito.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\newcircuito.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/newcircuito.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/newcircuito.cpp"
 },
 {
     "arguments": [
@@ -341,7 +341,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -366,10 +366,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\modificarsaida.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\modificarsaida.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/modificarsaida.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/modificarsaida.cpp"
 },
 {
     "arguments": [
@@ -403,7 +403,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -428,10 +428,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\port_incompleto.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\circuito_incompleto.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/port_incompleto.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/circuito_incompleto.cpp"
 },
 {
     "arguments": [
@@ -465,7 +465,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -490,10 +490,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Projetos\\circuito\\circuito-main.cpp"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\port_incompleto.cpp"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/circuito-main.cpp"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/port_incompleto.cpp"
 },
 {
     "arguments": [
@@ -527,7 +527,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -552,10 +552,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\maincircuito.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\maincircuito.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/maincircuito.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/maincircuito.h"
 },
 {
     "arguments": [
@@ -589,7 +589,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -614,10 +614,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\bool3S.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\bool3S.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/bool3S.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/bool3S.h"
 },
 {
     "arguments": [
@@ -651,7 +651,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -676,10 +676,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\modificarporta.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\modificarporta.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/modificarporta.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/modificarporta.h"
 },
 {
     "arguments": [
@@ -713,7 +713,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -738,10 +738,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\newcircuito.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\newcircuito.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/newcircuito.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/newcircuito.h"
 },
 {
     "arguments": [
@@ -775,7 +775,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -800,10 +800,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\modificarsaida.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\modificarsaida.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/modificarsaida.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/modificarsaida.h"
 },
 {
     "arguments": [
@@ -837,7 +837,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -862,10 +862,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\circuito.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\circuito.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/circuito.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/circuito.h"
 },
 {
     "arguments": [
@@ -899,7 +899,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -924,10 +924,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\port.h"
+        "C:\\Projetos\\circuito\\circuito-interface_incompleto\\port.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/port.h"
+    "file": "C:/Projetos/circuito/circuito-interface_incompleto/port.h"
 },
 {
     "arguments": [
@@ -961,7 +961,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -986,10 +986,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_newcircuito.h"
+        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_maincircuito.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_newcircuito.h"
+    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_maincircuito.h"
 },
 {
     "arguments": [
@@ -1023,69 +1023,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
-        "-IC:\\Qt\\6.4.0\\mingw_64\\include",
-        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
-        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
-        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
-        "-IC:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
-        "-IC:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
-        "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
-        "-isystem",
-        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
-        "-isystem",
-        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
-        "-isystem",
-        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
-        "-isystem",
-        "C:\\Qt\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
-        "-isystem",
-        "C:\\Qt\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
-        "-fmessage-length=0",
-        "-fdiagnostics-show-note-include-stack",
-        "-fretain-comments-from-system-headers",
-        "-fmacro-backtrace-limit=0",
-        "-ferror-limit=1000",
-        "-x",
-        "c++-header",
-        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_modificarporta.h"
-    ],
-    "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_modificarporta.h"
-},
-{
-    "arguments": [
-        "clang",
-        "-Wno-documentation-unknown-command",
-        "-Wno-unknown-warning-option",
-        "-Wno-unknown-pragmas",
-        "-nostdinc",
-        "-nostdinc++",
-        "-g",
-        "-Wall",
-        "-Wextra",
-        "-Wextra",
-        "-fexceptions",
-        "-mthreads",
-        "-fsyntax-only",
-        "-m64",
-        "--target=x86_64-w64-mingw32",
-        "-std=gnu++17",
-        "-DUNICODE",
-        "-D_UNICODE",
-        "-DWIN32",
-        "-DMINGW_HAS_SECURE_API",
-        "-DQT_DEPRECATED_WARNINGS",
-        "-DQT_QML_DEBUG",
-        "-DQT_WIDGETS_LIB",
-        "-DQT_GUI_LIB",
-        "-DQT_CORE_LIB",
-        "-DQT_NEEDS_QMAIN",
-        "-DQ_CREATOR_RUN",
-        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
-        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
-        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -1147,7 +1085,7 @@
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
         "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
-        "-IC:\\Projetos\\circuito",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
         "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
@@ -1172,9 +1110,71 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_maincircuito.h"
+        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_modificarporta.h"
     ],
     "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_maincircuito.h"
+    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_modificarporta.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-Wextra",
+        "-fexceptions",
+        "-mthreads",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-std=gnu++17",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_DEPRECATED_WARNINGS",
+        "-DQT_QML_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQ_CREATOR_RUN",
+        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-IC:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-IC:\\Projetos\\circuito\\circuito-interface_incompleto",
+        "-IC:\\Qt\\6.4.0\\mingw_64\\include",
+        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtWidgets",
+        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtGui",
+        "-IC:\\Qt\\6.4.0\\mingw_64\\include\\QtCore",
+        "-IC:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\debug",
+        "-IC:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug",
+        "-IC:\\Qt\\6.4.0\\mingw_64\\mkspecs\\win32-g++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0\\include\\c++\\backward",
+        "-isystem",
+        "C:\\Qt\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw1120_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "C:\\Projetos\\circuito\\build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug\\ui_newcircuito.h"
+    ],
+    "directory": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/ui_newcircuito.h"
 }
 ]

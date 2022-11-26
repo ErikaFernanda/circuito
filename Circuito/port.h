@@ -206,7 +206,7 @@ class Port_AND: public Port {
 public:
   // Construtor (recebe como parametro o numero de entradas da porta)
   // Testa o numero de entradas com validNumInputs(NI); se invalido, clear
-  Port_AND(int NI=2);
+  Port_AND();
   // Retorna new Port_AND(*this)
   ptr_Port clone() const;
   // Retorna "AN"

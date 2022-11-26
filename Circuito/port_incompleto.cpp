@@ -1,7 +1,6 @@
 #include <fstream>
 #include "port.h"
 
-using namespace std;
 
 //
 // CLASSE PORT
@@ -231,7 +230,7 @@ Port_NOT::Port_NOT() : Port(1){};
 
 ptr_Port Port_NOT::clone() const { return new Port_NOT(); };
 
-string Port_NOT::getName() const
+std::string Port_NOT::getName() const
 {
   return "NT";
 }
@@ -244,12 +243,12 @@ bool Port_NOT::validNumInputs(int NI) const
 void Port_NOT::digitar()
 {
   id_in.resize(1);
-  cout << "ID de entrada: \n";
-  cin >> id_in[0];
+  std::cout << "ID de entrada: \n";
+  std::cin >> id_in[0];
   while (!validIndex(id_in[0]))
   {
-    cout << "ID inválido. Digite outro ID: \n";
-    cin >> id_in[0];
+    std::cout << "ID inválido. Digite outro ID: \n";
+    std::cin >> id_in[0];
   }
 }
 
@@ -264,11 +263,11 @@ void Port_NOT::simular(const std::vector<bool3S> &in_port)
 }
 
 /// ==================== PORT AND ======================
-Port_AND::Port_AND(int NI=2) : Port(1){};//?????????
+Port_AND::Port_AND() : Port(2){};//?????????
 
 ptr_Port Port_AND::clone() const { return new Port_AND(); };
 
-string Port_AND::getName() const
+std::string Port_AND::getName() const
 {
   return "AN";
 }
@@ -280,16 +279,16 @@ void Port_AND::simular(const std::vector<bool3S> &in_port){
         return;
     }
     out_port = in_port[0];
-    for(int i=1;i<Num_input_port;i++){
+    for(int i=1;i<getNumInputs();i++){
         out_port &= in_port[i];
     }
 }
 /// ==================== PORT NAND ======================
-Port_NAND::Port_NAND() : Port(1){};//????????
+Port_NAND::Port_NAND() : Port(2){};//????????
 
 ptr_Port Port_NAND::clone() const { return new Port_NAND(); };
 
-string Port_AND::getName() const
+std::string Port_NAND::getName() const
 {
   return "NA";
 }
@@ -301,7 +300,7 @@ void Port_NAND::simular(const std::vector<bool3S> &in_port){
         return;
     }
     out_port = in_port[0];
-    for(int i=1;i<Num_input_port;i++){
+    for(int i=1;i<getNumInputs();i++){
         out_port &= in_port[i];
     }
     out_port = ~out_port;

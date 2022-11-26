@@ -45,12 +45,18 @@ ptr_Port allocPort(std::string &Tipo)
 
   if (Tipo == "NT")
     return new Port_NOT();
-  if (Tipo=="AN") return new Port_AND;
-  if (Tipo=="NA") return new Port_NAND;
-  if (Tipo=="OR") return new Port_OR;
-  if (Tipo=="NO") return new Port_NOR;
-  if (Tipo=="XO") return new Port_XOR;
-  if (Tipo=="NX") return new Port_NXOR;
+  if (Tipo == "AN")
+    return new Port_AND;
+  if (Tipo == "NA")
+    return new Port_NAND;
+  if (Tipo == "OR")
+    return new Port_OR;
+  if (Tipo == "NO")
+    return new Port_NOR;
+  if (Tipo == "XO")
+    return new Port_XOR;
+  if (Tipo == "NX")
+    return new Port_NXOR;
 
   // Nunca deve chegar aqui...
   return nullptr;
@@ -223,56 +229,60 @@ void Circuito::digitar()
 
   cout << "Informe o numero de entradas (Nin): \n";
   cin >> Nentradas;
-  while(Nentradas == 0){
+  while (Nentradas == 0)
+  {
     cout << "\n Numero de entradas invalido. Por favor, informe outro\n";
     cin >> Nentradas;
   }
 
   cout << "Informe o numero de saídas (Nout): \n";
   cin >> Nsaidas;
-  while (Nsaidas == 0){
+  while (Nsaidas == 0)
+  {
     cout << "\n Numero de saidas invalido. Por favor, informe outro\n";
     cin >> Nsaidas;
   }
 
   cout << "Informe o numero de portas (Nport): \n";
   cin >> Nport;
-  while(Nport == 0){
+  while (Nport == 0)
+  {
     cout << "\n Numero de portas invalido. Por favor, informe outro\n";
     cin >> Nport;
   }
 
   for (int i = 0; i < Nport; i++)
   {
-    cin.ignore(256,'\n');
+    cin.ignore(256, '\n');
     cout << "Portas disponiveis: (NT,AN,NA,OR,NO,XO,NX) \n";
     cout << "Informe a porta que deseja criar: ";
-    getline(cin,sigla_porta);
+    getline(cin, sigla_porta);
 
-cout << "SP2: "<< sigla_porta <<endl;
+    cout << "SP2: " << sigla_porta << endl;
     while (!validType(sigla_porta))
     {
-      cin.ignore(256,'\n');
+      cin.ignore(256, '\n');
       cout << "\nA porta digitada eh invalida. Por favor, digite outra porta: \n";
       cout << "Portas disponiveis: (NT,AN,NA,OR,NO,XO,NX): ";
-      getline(cin,sigla_porta);
+      getline(cin, sigla_porta);
     }
 
-    if (sigla_porta == "NT"){
+    if (sigla_porta == "NT")
+    {
       ports.push_back((&NT)->clone());
     }
     else if (sigla_porta == "AN")
-        ports.push_back((&AN)->clone());
+      ports.push_back((&AN)->clone());
     else if (sigla_porta == "NA")
-        ports.push_back((&NA)->clone());
+      ports.push_back((&NA)->clone());
     else if (sigla_porta == "OR")
-        ports.push_back((&OR)->clone());
+      ports.push_back((&OR)->clone());
     else if (sigla_porta == "NO")
-        ports.push_back((&NO)->clone());
+      ports.push_back((&NO)->clone());
     else if (sigla_porta == "XO")
-        ports.push_back((&XO)->clone());
+      ports.push_back((&XO)->clone());
     else if (sigla_porta == "NX")
-        ports.push_back((&NX)->clone());
+      ports.push_back((&NX)->clone());
     else
     {
       cout << "Erro: Essa porta não existe. ";
@@ -307,12 +317,12 @@ bool Circuito::ler(const std::string &arq)
   cout << arq;
   ifstream arquivo(arq);
   string prov, tipo;
-  int NI, NO, NP, Nin;
+  int N_I, N_O, NP, Nin;
   if (arquivo.is_open())
   {
-    arquivo >> prov >> NI >> NO >> NP;
+    arquivo >> prov >> N_I >> N_O >> NP;
 
-    if (prov != "CIRCUITO" || NI <= 0 || NO <= 0 || NP <= 0)
+    if (prov != "CIRCUITO" || N_I <= 0 || N_O <= 0 || NP <= 0)
     {
       cout << "Erro: Arquivo fora do modelo desejado.\n";
       return false;
@@ -377,7 +387,7 @@ bool Circuito::ler(const std::string &arq)
     arquivo.ignore(255, '\n');
 
     i = 0;
-    for (int i = 0; i < NO; i++)
+    for (int i = 0; i < N_O; i++)
     {
       arquivo >> int_prov;
       if (int_prov != i + 1)
@@ -399,22 +409,21 @@ bool Circuito::ler(const std::string &arq)
   }
 
   return true;
-
 }
 
 bool Circuito::salvar(const std::string &arq) const
 {
 
-// CIRCUITO 2 2 5
-// PORTAS
-// 1) NA 2: -1 -2
-// 2) OR 2: 1 4
-// 3) AN 2: -1 3
-// 4) NT 1: -2
-// 5) NT 1: 3
-// SAIDAS
-// 1) 2
-// 2) 5
+  // CIRCUITO 2 2 5
+  // PORTAS
+  // 1) NA 2: -1 -2
+  // 2) OR 2: 1 4
+  // 3) AN 2: -1 3
+  // 4) NT 1: -2
+  // 5) NT 1: 3
+  // SAIDAS
+  // 1) 2
+  // 2) 5
   ofstream O(arq.c_str());
   if (!O.is_open())
     return false;
@@ -422,7 +431,6 @@ bool Circuito::salvar(const std::string &arq) const
   O << "CIRCUITO " << endl;
   O << "PORTAS " << endl;
   O << "SAIDAS " << endl;
-
 
   O.close();
   return true;

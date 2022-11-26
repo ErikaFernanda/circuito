@@ -220,21 +220,21 @@ void Circuito::digitar()
   int Nport;
   string sigla_porta;
   bool porta_valida;
-  
+
   cout << "Informe o numero de entradas (Nin): \n";
   cin >> Nentradas;
   while(Nentradas == 0){
     cout << "\n Numero de entradas invalido. Por favor, informe outro\n";
     cin >> Nentradas;
   }
-  
+
   cout << "Informe o numero de saídas (Nout): \n";
   cin >> Nsaidas;
   while (Nsaidas == 0){
     cout << "\n Numero de saidas invalido. Por favor, informe outro\n";
     cin >> Nsaidas;
   }
-  
+
   cout << "Informe o numero de portas (Nport): \n";
   cin >> Nport;
   while(Nport == 0){
@@ -242,13 +242,13 @@ void Circuito::digitar()
     cin >> Nport;
   }
 
-  for (unsigned i = 0; i < Nport; i++)
+  for (int i = 0; i < Nport; i++)
   {
     cin.ignore(256,'\n');
     cout << "Portas disponiveis: (NT,AN,NA,OR,NO,XO,NX) \n";
     cout << "Informe a porta que deseja criar: ";
     getline(cin,sigla_porta);
-    
+
 cout << "SP2: "<< sigla_porta <<endl;
     while (!validType(sigla_porta))
     {
@@ -282,7 +282,7 @@ cout << "SP2: "<< sigla_porta <<endl;
     ports[i]->digitar();
 
     int ID;
-    for (unsigned i = 0; i < Nout; i++)
+    for (int i = 0; i < Nout; i++)
     {
       cout << "ID do sinal que vai para a saida " << i + 1 << endl;
       cin >> ID;
@@ -311,7 +311,7 @@ bool Circuito::ler(const std::string &arq)
   if (arquivo.is_open())
   {
     arquivo >> prov >> NI >> NO >> NP;
-  
+
     if (prov != "CIRCUITO" || NI <= 0 || NO <= 0 || NP <= 0)
     {
       cout << "Erro: Arquivo fora do modelo desejado.\n";
@@ -377,7 +377,7 @@ bool Circuito::ler(const std::string &arq)
     arquivo.ignore(255, '\n');
 
     i = 0;
-    for (unsigned i = 0; i < NO; i++)
+    for (int i = 0; i < NO; i++)
     {
       arquivo >> int_prov;
       if (int_prov != i + 1)
@@ -397,7 +397,7 @@ bool Circuito::ler(const std::string &arq)
       id_out[i] = int_prov;
     }
   }
-  
+
   return true;
 
 }

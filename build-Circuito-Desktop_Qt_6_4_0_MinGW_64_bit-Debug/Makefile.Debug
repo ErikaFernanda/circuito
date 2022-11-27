@@ -286,6 +286,9 @@ debug/moc_maincircuito.cpp: ../circuito-interface_incompleto/maincircuito.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		../circuito-interface_incompleto/modificarporta.h \
 		../circuito-interface_incompleto/modificarsaida.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		debug/moc_predefs.h \
 		../../../Qt/6.4.0/mingw_64/bin/moc.exe
 	C:\Qt\6.4.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Projetos/circuito/build-Circuito-Desktop_Qt_6_4_0_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.4.0/mingw_64/mkspecs/win32-g++ -IC:/Projetos/circuito/circuito-interface_incompleto -IC:/Qt/6.4.0/mingw_64/include -IC:/Qt/6.4.0/mingw_64/include/QtWidgets -IC:/Qt/6.4.0/mingw_64/include/QtGui -IC:/Qt/6.4.0/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\circuito-interface_incompleto\maincircuito.h -o debug\moc_maincircuito.cpp
@@ -896,6 +899,9 @@ debug/main.o: ../circuito-interface_incompleto/main.cpp ../circuito-interface_in
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		../circuito-interface_incompleto/modificarporta.h \
 		../circuito-interface_incompleto/modificarsaida.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QApplication \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qapplication.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -1072,6 +1078,9 @@ debug/maincircuito.o: ../circuito-interface_incompleto/maincircuito.cpp ../circu
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		../circuito-interface_incompleto/modificarporta.h \
 		../circuito-interface_incompleto/modificarsaida.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		ui_maincircuito.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QStringList \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/QString \
@@ -1085,8 +1094,7 @@ debug/maincircuito.o: ../circuito-interface_incompleto/maincircuito.cpp ../circu
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qcalendar.h \
 		../../../Qt/6.4.0/mingw_64/include/QtCore/qlocale.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
-		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h \
-		../circuito-interface_incompleto/bool3S.h
+		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\maincircuito.o ..\circuito-interface_incompleto\maincircuito.cpp
 
 debug/modificarporta.o: ../circuito-interface_incompleto/modificarporta.cpp ../circuito-interface_incompleto/maincircuito.h \
@@ -1237,6 +1245,9 @@ debug/modificarporta.o: ../circuito-interface_incompleto/modificarporta.cpp ../c
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qdialog.h \
 		../circuito-interface_incompleto/modificarporta.h \
 		../circuito-interface_incompleto/modificarsaida.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		ui_modificarporta.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
@@ -1392,6 +1403,9 @@ debug/newcircuito.o: ../circuito-interface_incompleto/newcircuito.cpp ../circuit
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		../circuito-interface_incompleto/modificarporta.h \
 		../circuito-interface_incompleto/modificarsaida.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QMessageBox \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\newcircuito.o ..\circuito-interface_incompleto\newcircuito.cpp
@@ -1545,6 +1559,9 @@ debug/modificarsaida.o: ../circuito-interface_incompleto/modificarsaida.cpp ../c
 		../../../Qt/6.4.0/mingw_64/include/QtGui/qtextdocument.h \
 		../circuito-interface_incompleto/newcircuito.h \
 		../circuito-interface_incompleto/modificarporta.h \
+		../circuito-interface_incompleto/circuito.h \
+		../circuito-interface_incompleto/bool3S.h \
+		../circuito-interface_incompleto/port.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/QPushButton \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		../../../Qt/6.4.0/mingw_64/include/QtWidgets/qabstractbutton.h

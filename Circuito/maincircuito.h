@@ -6,7 +6,7 @@
 #include "newcircuito.h"
 #include "modificarporta.h"
 #include "modificarsaida.h"
-
+#include "circuito.h"
 //Erika Fernanda da Silva Oliveira (20190084385)
 //Felipe Gabriel B. da Silva (20200069600)
 
@@ -84,7 +84,7 @@ private:
   NewCircuito *newCircuito;        // Caixa de dialogo para criar um novo circuito
   ModificarPorta *modificarPorta;  // Caixa de dialogo para modificar uma porta
   ModificarSaida *modificarSaida;  // Caixa de dialogo para modificar uma saida
-
+  Circuito circuito;
   // Redimensiona todas as tabelas e reexibe todos os valores da barra de status
   // Essa funcao deve ser chamada sempre que mudar o circuito (digitar ou ler de arquivo)
   void redimensionaTabelas();

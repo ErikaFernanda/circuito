@@ -352,7 +352,8 @@ void MainCircuito::on_actionLer_triggered()
     // e testa se a leitura deu certo
     // ### falta_fazer(); ###
     // Provisoriamente, o teste eh sempre falso
-    bool leitura_OK = false;
+
+    bool leitura_OK = circuito.ler(fileName.toStdString());
     if (!leitura_OK)
     {
       // Exibe uma msg de erro na leitura
@@ -372,7 +373,7 @@ void MainCircuito::on_actionSalvar_triggered()
   // Soh pode salvar se o Circuito for valido
   // ### falta_fazer(); ###
   // Provisoriamente, o teste eh sempre falso
-  bool circuito_valido = false;
+  bool circuito_valido = circuito.valid();
   if (!circuito_valido)
   {
     QMessageBox msgBox;
@@ -385,10 +386,11 @@ void MainCircuito::on_actionSalvar_triggered()
                                                   tr("Circuitos (*.txt);;Todos (*.*)"));
 
   if (!fileName.isEmpty()) {
+    
     // Salva o circuito no arquivo com nome "fileName", usando a funcao apropriada da classe Circuito
     // ### falta_fazer(); ###
     // Provisoriamente, o teste eh sempre falso
-    bool escrita_OK = false;
+    bool escrita_OK = circuito.salvar(fileName.toStdString());;
     if (!escrita_OK)
     {
       // Exibe uma msg de erro na leitura
@@ -406,7 +408,7 @@ void MainCircuito::on_actionGerar_tabela_triggered()
   // Soh pode simular se o Circuito for valido
   // ### falta_fazer(); ###
   // Provisoriamente, o teste eh sempre falso
-  bool circuito_valido = false;
+  bool circuito_valido =circuito.valid(); ;
   if (!circuito_valido)
   {
     QMessageBox msgBox;

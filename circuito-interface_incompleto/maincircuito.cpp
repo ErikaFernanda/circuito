@@ -12,6 +12,10 @@
 #include <string>
 #include "bool3S.h"
 
+
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 MainCircuito::MainCircuito(QWidget *parent) : QMainWindow(parent)
 ,ui(new Ui::MainCircuito)
 ,numIn(new QLabel(this))
@@ -440,7 +444,7 @@ void MainCircuito::on_actionGerar_tabela_triggered()
   for (i=0; i<numCombinacoesEntrada; i++)
   {
     //
-    // Exibe a i-esima combinação de entrada
+    // Exibe a i-esima combinaï¿½ï¿½o de entrada
     //
 
     // Cria os QLabels correspondentes aas entradas in_circ[j]

@@ -6,6 +6,8 @@
 #include <vector>
 #include "bool3S.h"
 #include "port.h"
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
 
 /// ###########################################################################
 /// ATENCAO PARA A CONVENCAO DOS NOMES PARA OS PARAMETROS DAS FUNCOES:

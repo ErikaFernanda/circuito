@@ -3,7 +3,10 @@
 #include "circuito.h"
 #include "port.h"
 #include <iostream>
+#include <limits>
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
 using namespace std;
 
 Port_NOT NT;
@@ -314,15 +317,14 @@ void Circuito::digitar()
 }
 bool Circuito::ler(const std::string &arq)
 {
-  cout << arq;
+  ports.resize(1);
   ifstream arquivo(arq);
   string prov, tipo;
   int N_I, N_O, NP, Nin;
   if (arquivo.is_open())
   {
     arquivo >> prov >> N_I >> N_O >> NP;
-
-    if (prov != "CIRCUITO" || N_I <= 0 || N_O <= 0 || NP <= 0)
+    if (prov != "CIRCUITO")
     {
       cout << "Erro: Arquivo fora do modelo desejado.\n";
       return false;
@@ -379,51 +381,35 @@ bool Circuito::ler(const std::string &arq)
     } while (i < NP);
 
     arquivo >> prov;
-    if (prov != "SAIDAS:")
+    if (prov != "SAIDAS")
     {
-      cout << "Erro: Palavra chave 'SAIDAS:'";
+      cout << "Erro: Palavra chave 'SAIDAS'";
       return false;
     }
     arquivo.ignore(255, '\n');
 
     i = 0;
+    id_out.resize(N_O);
     for (int i = 0; i < N_O; i++)
     {
       arquivo >> int_prov;
       if (int_prov != i + 1)
       {
-        cout << "Saidas fora de ordem, ou fantando\n";
+        cout << "Erro na ordem ordem\n";
         return false;
       }
       arquivo.ignore(255, ' ');
-
-      arquivo >> int_prov; // Não sei se deve ser lido de novo
-      if (!validIdPort(NP))
-      {
-        cout << "Erro: Id out > Nportas";
-        return false;
-      }
-
+      
       id_out[i] = int_prov;
     }
-  }
 
+  }
   return true;
 }
 
 bool Circuito::salvar(const std::string &arq) const
 {
 
-  // CIRCUITO 2 2 5
-  // PORTAS
-  // 1) NA 2: -1 -2
-  // 2) OR 2: 1 4
-  // 3) AN 2: -1 3
-  // 4) NT 1: -2
-  // 5) NT 1: 3
-  // SAIDAS
-  // 1) 2
-  // 2) 5
   ofstream O(arq.c_str());
   if (!O.is_open())
     return false;
@@ -484,10 +470,3 @@ bool3S Circuito::getOutput(int IdOutput) const
   return bool3S::UNDEF;
 }
 
-// falta_fazer();
-
-/// ***********************
-/// SIMULACAO (funcao principal do circuito)
-/// ***********************
-
-// falta_fazer();

@@ -2,6 +2,9 @@
 #include "port.h"
 
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 //
 // CLASSE PORT
 //
@@ -247,7 +250,7 @@ void Port_NOT::digitar()
   std::cin >> id_in[0];
   while (!validIndex(id_in[0]))
   {
-    std::cout << "ID inválido. Digite outro ID: \n";
+    std::cout << "ID invalido. Digite outro ID: \n";
     std::cin >> id_in[0];
   }
 }

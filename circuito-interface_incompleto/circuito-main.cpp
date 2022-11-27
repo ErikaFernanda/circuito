@@ -2,6 +2,9 @@
 #include <string>
 #include "circuito.h"
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 using namespace std;
 
 void gerarTabela(Circuito& C);
@@ -29,9 +32,13 @@ int main(void)
       C.digitar();
       break;
     case 2:
+      cout << "Caminho: ";
+      getline(cin,nome);
+      C.salvar(nome);
     case 3:
       // Antes de ler a string com o nome do arquivo, esvaziar o buffer do teclado
       cin.ignore(256,'\n');
+      
       do {
         cout << "Arquivo: ";
         getline(cin,nome);
@@ -67,8 +74,6 @@ void gerarTabela(Circuito& C)
 {
   vector<bool3S> in_circ(C.getNumInputs());
   int i;
-
-  // Comeca com todas as entradas indefinidas
   for (i=0; i<C.getNumInputs(); i++)
   {
     in_circ.at(i) = bool3S::UNDEF;
@@ -77,10 +82,7 @@ void gerarTabela(Circuito& C)
   cout << "ENTRADAS" << '\t' << "SAIDAS" << endl;
   do
   {
-    // Simulacao
     C.simular(in_circ);
-
-    // Impressao das entradas
     for (i=0; i<C.getNumInputs(); i++)
     {
       cout << in_circ.at(i);
@@ -91,25 +93,18 @@ void gerarTabela(Circuito& C)
         if (C.getNumInputs()<=2) cout <<'\t';
       }
     }
-
-    // Impressao das saidas
     for (i=0; i<C.getNumOutputs(); i++)
     {
       cout << C.getOutput(i+1);
       if (i<C.getNumOutputs()-1) cout << ' ';
       else cout << '\n';
     }
-
-    // Determina qual entrada deve ser incrementada na proxima linha
-    // Incrementa a ultima possivel que nao for TRUE
-    // Se a ultima for TRUE, faz essa ser UNDEF e tenta incrementar a anterior
-    i = C.getNumInputs()-1;
+i = C.getNumInputs()-1;
     while (i>=0 && in_circ.at(i)==bool3S::TRUE)
     {
       in_circ.at(i)++;
       i--;
     };
-    // Incrementa a input selecionada
     if (i>=0) in_circ.at(i)++;
   } while (i>=0);
 }

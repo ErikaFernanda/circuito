@@ -6,6 +6,10 @@
 #include <vector>
 #include "bool3S.h"
 
+
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 /// ###########################################################################
 /// ATENCAO PARA A CONVENCAO DOS NOMES PARA OS PARAMETROS DAS FUNCOES:
 /// int I: indice (de entrada de porta): de 0 a NInputs-1

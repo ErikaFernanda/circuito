@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 // Criando um tipo de dados enumerado (bool3S) para representar um booleano com 3 estados:
 // bool3S::TRUE, bool3S::FALSE e bool3S::UNDEF
 enum class bool3S {

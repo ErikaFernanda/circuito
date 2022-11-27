@@ -4,6 +4,8 @@
 #include <QPushButton>
 #include <string>
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
 ModificarPorta::ModificarPorta(QWidget *parent) :
   QDialog(parent),
   ui(new Ui::ModificarPorta),

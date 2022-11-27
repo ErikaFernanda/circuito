@@ -6,7 +6,7 @@
 1669234240 c:\projetos\circuito\circuito\bool3s.h
 	<iostream>
 
-1669400236 source:c:\projetos\circuito\circuito\circuito-main.cpp
+1669513957 source:c:\projetos\circuito\circuito\circuito-main.cpp
 	<iostream>
 	<string>
 	"circuito.h"
@@ -18,13 +18,13 @@
 	"bool3S.h"
 	"port.h"
 
-1669478266 c:\projetos\circuito\circuito\port.h
+1669479284 c:\projetos\circuito\circuito\port.h
 	<iostream>
 	<string>
 	<vector>
 	"bool3S.h"
 
-1669478547 source:c:\projetos\circuito\circuito\port_incompleto.cpp
+1669510975 source:c:\projetos\circuito\circuito\port_incompleto.cpp
 	<fstream>
 	"port.h"
 
@@ -64,7 +64,7 @@
 	<fstream>
 	"port.h"
 
-1669477096 source:c:\projetos\circuito\circuito\circuito_incompleto.cpp
+1669514321 source:c:\projetos\circuito\circuito\circuito_incompleto.cpp
 	<fstream>
 	<utility>
 	"circuito.h"

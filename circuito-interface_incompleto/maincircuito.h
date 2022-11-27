@@ -7,6 +7,9 @@
 #include "modificarporta.h"
 #include "modificarsaida.h"
 
+//Erika Fernanda da Silva Oliveira (20190084385)
+//Felipe Gabriel B. da Silva (20200069600)
+
 /* ======================================================================== *
  * ESSA EH A CLASSE QUE REPRESENTA A TELA PRINCIPAL DO APLICATIVO           *
  * ======================================================================== */
